@@ -1,0 +1,291 @@
+/* modified from html5up mathlive semantic ui*/
+@font-face {
+    font-family: Droid;
+    src: url(/assets/fonts/droid-sans-mono.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body,
+input,
+select,
+textarea {
+    color: #ffffff;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+body {
+    background: #1b1f22;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+form {
+    margin: 0 0 2rem 0;
+}
+
+form .fields {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1.5rem 0 2rem -1.5rem;
+    margin: 0;
+}
+
+form> :last-child {
+    margin-bottom: 0;
+}
+
+form .fields .field {
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    padding: 1.5rem 0 0 0.5rem;
+    width: calc(100% - 0.5rem)
+}
+
+form .fields .field .major {
+    margin: 0;
+}
+
+i {
+    font-style: italic;
+}
+
+.panel {
+    width: 50vw;
+    height: calc(100vh - 75px);
+    position: fixed;
+    top: 75px;
+}
+
+.right {
+    right: 0;
+}
+
+.box {
+    width: calc(100% - 30px);
+    height: calc(100% - 60px);
+    margin: 30px 10px 30px 20px;
+    position: absolute;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.block {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    display: table;
+    height: 100%;
+    position: relative;
+}
+
+.block>* {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.number.block {
+    width: 10ch;
+    padding-right: 10px;
+}
+
+.mono {
+    font-family: "Droid"
+}
+
+.input.block {
+    max-width: calc(99% - 10ch - 10px - 1.5rem);
+    width: 50%
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+    letter-spacing: 0.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+sub {
+    font-size: 0.8rem;
+    position: relative;
+    top: 0.5rem;
+}
+
+sup {
+    font-size: 0.8rem;
+    position: relative;
+    top: -0.5rem;
+}
+
+.mathfield {
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin: 10px 0 10px 0;
+    min-width: 25vw;
+    max-width: 100px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+}
+
+/* modified from semantic ui*/
+.dimmer {
+    display: none;
+    position: absolute;
+    top: 0em !important;
+    left: 0em !important;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    line-height: 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-transition: background-color 0.5s linear;
+    transition: background-color 0.5s linear;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    will-change: opacity;
+    z-index: 1000;
+}
+
+.dimmer[data-active=true] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
+}
+
+.small, .big, .medium {
+    display: none;
+}
+
+@media screen and (max-width: 640px) and (min-width: 400px) {
+    .medium {
+        display: block;
+    }
+
+    .panel {
+        width: 100%;
+    }
+
+    .mathfield {
+        min-width: 60vw;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .big {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .small {
+        display: block;
+    }
+
+    .panel {
+        width: 100%;
+    }
+}
+
+.warning {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: #481B1F;
+    min-height: 40px;
+}
+
+.warning div {
+    width: 90%;
+}
+
+.warning i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.header {
+    background-color: #171E4D;
+    height: 75px;
+    position: relative;
+}
+
+.note {
+    text-align: right;
+    font-size: small;
+}
+
+.fieldbox {
+    flex-direction: column;
+    display: flex;
+}
+
+.wide.panel {
+    width: 100%;
+    text-align: center;
+    height: calc(100vh - 75px);
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

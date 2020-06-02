@@ -1,0 +1,869 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>第三屆天物盃：天下第一物理大會</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<link type="text/css" href="assets/css/jquery.simple-dtpicker.css" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/sass/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/sass/noscript.css" /></noscript>
+	<style>
+		/* Tooltip container */
+		.tooltip {
+		  position: relative;
+		  display: inline-block;
+		  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+		}
+
+		/* Tooltip text */
+		.tooltip .tooltiptext {
+		  visibility: hidden;
+		  min-width: 100pt;
+		  white-space: normal;
+		  background-color: black;
+		  color: #fff;
+		  text-align: center;
+		  padding: 5px 0;
+		  border-radius: 6px;
+
+		  /* Position the tooltip text - see examples below! */
+		  position: absolute;
+		  z-index: 1;
+		}
+
+		/* Show the tooltip text when you mouse over the tooltip container */
+		.tooltip:hover .tooltiptext {
+		  visibility: visible;
+		}
+
+		#warning{
+			display: none;
+			background-color: scarlet;
+		}
+		.nav.button.primary{
+			border-radius: 0;
+		}
+		.nav.button.primary:hover{
+			color:white !important;
+		}
+
+		.field>.grouped{
+			position: relative;
+		    flex: 1 1 auto;
+		    width: 1%;
+		    margin-bottom: 0;
+		}
+
+		.group:not(:first-of-type) *{
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+		}
+
+		.group:not(:last-of-type) *{
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+			border-bottom: 0;
+		}
+
+		.field{
+			position: relative;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: stretch;
+			width: 100%;
+		}
+
+		.field>.grouped+.grouped{
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+
+		.field>.grouped:not(:last-child){
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+			border-right: 0;
+		}
+
+		.helper {
+		    display: inline-block;
+		    height: 100%;
+		    vertical-align: middle;
+		}
+
+		.helper+img {
+		    vertical-align: middle;
+		}
+
+		path {
+			fill:white
+		}
+
+		</style>
+</head>
+
+<body class="is-preload">
+
+	<div id="wrapper">
+
+		<header id="header">
+			<div class="logo">
+				<!--<span class="icon fa-diamond"></span>-->
+				<span class="helper"></span><img src="images/logo.png" style="width:60%" onclick="location.hash='#admin'" />
+			</div>
+			<div class="content">
+				<div class="inner">
+					<h1>第三屆天物盃</h1>
+					<h2>天下第一物理大會</h2>
+					<p>與同伴一起切磋出
+						<br />
+						刷題的愉悅&nbsp;&nbsp;物理的青春</p>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#intro">簡介</a></li>
+					<li><a href="#history">緣起</a></li>
+					<li><a href="#info">資訊</a></li>
+					<li><a href="assets/info.pdf" class="icon fa-download" download="第三屆天物盃_天下第一物理大會_競賽簡章">簡章</a></li>
+					<li><a href="#register" class="nav button primary">立刻報名</a></li>
+					<li><a href="#login" class="nav button primary">登入</a></li>
+					<!--<li><a href="#elements">Elements</a></li>-->
+				</ul>
+			</nav>
+		</header>
+
+		<div id="main">
+			<article id="intro">
+				<h2 class="major">簡介</h2>
+				<!--<span class="image main"><img src="images/pic01.jpg" alt="" /></span>-->
+				<p>天物盃乃是一個針對國內高中職以下在學學生所設計的<ruby>天下第一物理大會<rt>團體物理競賽</rt></ruby>，由每年的亞洲物理奧林匹亞臺灣代表隊所主辦。
+					每支隊伍由四人組成，隊伍間經由思考賽、接力賽、趣味知識競賽等三個回合互相切磋，
+					<ruby>為了成為天下第一<rt>トップスタァを目指して</rt>而</ruby><ruby>歌頌<rt>歌って</rt></ruby>物理，而<ruby>揮灑<rt>踊って</rt></ruby>青春，<ruby>而互相稱爭奪<rt>奪い合いましょう</rt></ruby>。
+				</p>
+			</article>
+
+			<article id="history">
+				<h2 class="major">緣起</h2>
+				<!--<span class="image main"><img src="images/pic01.jpg" alt="" /></span>-->
+				<p>鑒於目前臺灣普遍舉辦之高中物理競賽在競賽當下無法討論，
+					第18屆亞洲物理奧林匹亞臺灣代表隊在2018年寒假首次舉辦本競賽，
+					希望藉由舉辦以團體方式參加的物理競賽，培養所有參賽選手對物理的熱情與興趣，
+					藉由此嶄新類型的競賽，增進同儕之間的交流、產生互助合作的心態、帶動學生愛
+					好物理的風氣、鼓勵學生及校際間互相觀摩，以提升物理學習之成效。此次競賽是為第一屆天物杯。
+					緊接著，第19屆代表隊在2018年暑假舉辦了第二屆天物盃，從此天物盃皆訂於暑假舉行，至今已是第三屆。
+				</p>
+			</article>
+
+			<article id="info">
+				<h2 class="major">參加對象</h2>
+				<p>一隊四名全國高級中學以下在學學生(107學年度)</p>
+				<h2 class="major">名額限制</h2>
+				<ul>
+					<li>初賽：無名額上限</li>
+					<li>決賽：取初賽前12隊</li>
+				</ul>
+				<h2 class="major">競賽時間</h2>
+				<ul>
+					<li>初賽：2019年7月20日 13:30~15:30</li>
+					<li>決賽：2019年8月24日 08:30~16:30</li>
+				</ul>
+				<h2 class="major">競賽地點</h2>
+				<ul>
+					<li>初賽：線上舉行</li>
+					<li>決賽：臺中市立臺中一中</li>
+				</ul>
+			</article>
+
+			<article id="success">
+				<h2 class="major"></h2>
+				<!--<span class="image main"><img src="images/pic01.jpg" alt="" /></span>-->
+				<p>阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓
+					阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓
+					阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓<span id="teamName"></span>阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓
+					阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓阿貓
+
+				</p>
+			</article>
+
+			<article id="register">
+				<h2 class="major">報名</h2>
+				<form id="registerForm">
+					<div class="fields">
+						<div class="field">
+							<label for="name">隊名</label>
+							<input type="text" name="name" id="name" autocomplete="organization-title" />
+						</div>
+						<div class="field half">
+							<label for="email">電子郵件</label>
+							<input type="email" name="email" id="email" autocomplete="email" />
+						</div>
+						<div class="field half">
+							<label for="tel">聯絡電話</label>
+							<input type="text" name="tel" id="tel" autocomplete="tel" />
+						</div>
+						<div class="field half">
+							<label for="psw">密碼</label>
+							<input type="password" name="psw" id="psw" autocomplete="new-password" />
+						</div>
+						<div class="field half">
+							<label for="confPsw">確認密碼</label>
+							<input type="password" name="confPsw" id="confPsw" autocomplete="none" />
+						</div>
+						<div class="field">
+							<label for="contestant1">隊員數</label>
+							<input type='range' min='1' max='4' value='4' step='1' class="n n4" id="num" name="num"/>
+						</div>
+						<div id="warning" class="field"><p>
+							<svg height="1.5em" viewBox="0 0 32 32">
+							<g fill="none" fill-rule="evenodd" id="Icons new Arranged Names" stroke="none" stroke-width="1">
+							<g fill="#000000"><path d="M14.4242327,6.14839275 C15.2942987,4.74072976 16.707028,4.74408442 17.5750205,6.14839275 L28.3601099,23.59738 C29.5216388,25.4765951 28.6755462,27 26.4714068,27 L5.5278464,27 C3.32321557,27 2.47386317,25.4826642 3.63914331,23.59738 Z M16,20 C16.5522847,20 17,19.5469637 17,19.0029699 L17,12.9970301 C17,12.4463856 16.5561352,12 16,12 C15.4477153,12 15,12.4530363 15,12.9970301 L15,19.0029699 C15,19.5536144 15.4438648,20 16,20 Z M16,24 C16.5522848,24 17,23.5522848 17,23 C17,22.4477152 16.5522848,22 16,22 C15.4477152,22 15,22.4477152 15,23 C15,23.5522848 15.4477152,24 16,24 Z M16,24" id="Triangle 29"/></g></g></svg>
+							若人數少於四人，我們會幫你尋找合適的隊友。使用前請先詳閱<a href="assets/info.pdf">簡章</a>。
+						</p></div>
+						<div class="field" id="contestant1">
+							<label for="name1">隊長</label>
+							<div class="group field">
+								<input type="text" class="grouped six" id="name1" name="name1" placeholder="姓名" />
+								<select class="grouped three" id="food1" name="food1">
+									<option value="葷" selected>葷</option>
+									<option value="素">素</option>
+								</select>
+								<select class="grouped three" id="gender1" name="gender1">
+									<option value="男" selected>男</option>
+									<option value="女">女</option>
+									<option value="">其他</option>
+								</select>
+							</div>
+							<div class="group field">
+								<input type="text" class="grouped eight" id="school1" name="school1" placeholder="學校" />
+								<select class="grouped four" id="grade1" name="grade1">
+									<option value="" disabled selected>年級（暑假前）</option>
+									<option value="國二或以下">國二或以下</option>
+									<option value="國三">國三</option>
+									<option value="高一">高一</option>
+									<option value="高二">高二</option>
+									<option value="高三">高三</option>
+								</select>
+							</div>
+						</div>
+						<div class="field" id="contestant2">
+							<label for="name2">隊員1</label>
+							<div class="group field">
+								<input type="text" class="grouped six" id="name2" name="name2" placeholder="姓名" />
+								<select class="grouped three" id="food2" name="food2">
+									<option value="葷" selected>葷</option>
+									<option value="素">素</option>
+								</select>
+								<select class="grouped three" id="gender2" name="gender2">
+									<option value="男" selected>男</option>
+									<option value="女">女</option>
+									<option value="">其他</option>
+								</select>
+							</div>
+							<div class="group field">
+								<input type="text" class="grouped eight" id="school2" name="school2" placeholder="學校" />
+								<select class="grouped four" id="grade2" name="grade2">
+									<option value="" disabled selected>年級（暑假前）</option>
+									<option value="國二或以下">國二或以下</option>
+									<option value="國三">國三</option>
+									<option value="高一">高一</option>
+									<option value="高二">高二</option>
+									<option value="高三">高三</option>
+								</select>
+							</div>
+						</div>
+						<div class="field" id="contestant3">
+							<label for="name3">隊員2</label>
+							<div class="group field">
+								<input type="text" class="grouped six" id="name3" name="name3" placeholder="姓名" />
+								<select class="grouped three" id="food3" name="food3">
+									<option value="葷" selected>葷</option>
+									<option value="素">素</option>
+								</select>
+								<select class="grouped three" id="gender3" name="gender3">
+									<option value="男" selected>男</option>
+									<option value="女">女</option>
+									<option value="">其他</option>
+								</select>
+							</div>
+							<div class="group field">
+								<input type="text" class="grouped eight" id="school3" name="school3" placeholder="學校" />
+								<select class="grouped four" id="grade3" name="grade3">
+									<option value="" disabled selected>年級（暑假前）</option>
+									<option value="國二或以下">國二或以下</option>
+									<option value="國三">國三</option>
+									<option value="高一">高一</option>
+									<option value="高二">高二</option>
+									<option value="高三">高三</option>
+								</select>
+							</div>
+						</div>
+						<div class="field" id="contestant4">
+							<label for="name4">隊員3</label>
+							<div class="group field">
+								<input type="text" class="grouped six" id="name4" name="name4" placeholder="姓名" />
+								<select class="grouped three" id="food4" name="food4">
+									<option value="葷" selected>葷</option>
+									<option value="素">素</option>
+								</select>
+								<select class="grouped three" id="gender4" name="gender4">
+									<option value="男" selected>男</option>
+									<option value="女">女</option>
+									<option value="">其他</option>
+								</select>
+							</div>
+							<div class="group field">
+								<input type="text" class="grouped eight" id="school4" name="school4" placeholder="學校" />
+								<select class="grouped four" id="grade4" name="grade4">
+									<option value="" disabled selected>年級（暑假前）</option>
+									<option value="國二或以下">國二或以下</option>
+									<option value="國三">國三</option>
+									<option value="高一">高一</option>
+									<option value="高二">高二</option>
+									<option value="高三">高三</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="field">
+							<input type="checkbox" id="finals" name="finals" checked>
+							<label for="finals"><a href="#" class="tooltip">我將會參加決賽
+									<span class="tooltiptext">此意願並不會影響初賽成績與排名,僅用來當作是否邀請晉級隊伍參加決賽之依據。</span>
+								</a></label>
+						</div>
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="確認送出" class="primary" /></li>
+						<li><input type="reset" value="重新填寫" /></li>
+						<li><input type="reset" value="取消報名" onclick="javascript:location.hash='#cancel'" /></li>
+					</ul>
+				</form>
+			</article>
+
+
+			<article id="cancel">
+				<h2 class="major">取消報名</h2>
+				<form method="" target="" id="cancelForm">
+					<div class="fields">
+						<div class="field">
+							<label for="cancelEmail">電子郵件</label><br />
+							<input type="text" id="cancelEmail" placeholder="電子郵件" />
+						</div>
+						<div class="field">
+							<label for="cancelPsw">密碼</label><br />
+							<input type="text" id="cancelPsw" placeholder="密碼" />
+						</div>
+
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="確認取消" class="primary" /></li>
+					</ul>
+				</form>
+			</article>
+
+			<article id="login">
+				<h2 class="major">登入</h2>
+				<form id="loginForm" style="margin-bottom:30px">
+					<div class="fields">
+						<div class="field">
+							<label for="loginEmail">電子郵件</label>
+							<input type="email" id="loginEmail" autocomplete="email"/>
+						</div>
+						<div class="field">
+							<label for="loginName">姓名</label>
+							<input type="text" id="loginName" />
+						</div>
+						<div class="field">
+							<label for="loginPassword">密碼</label>
+							<input type="password" id="loginPassword" />
+						</div>
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="登入" /></li>
+					</ul>
+				</form>
+			</article>
+
+			<article id="admin">
+				<div class="admin" style="display:none">
+					<h2 class="major">歡迎來到後臺</h2>
+					<ul>
+						<li><a href="#adminRegister">報名列表</a></li>
+						<li><a href="#adminContests">競賽管理</a></li>
+					</ul>
+				</div>
+				<div class="field" id="adminForm" style="margin-bottom:30px">
+					<label for="secret">請輸入密碼</label>
+					<div class="group field">
+						<input type="password" class="grouped ten secret" id="secret" placeholder="密碼" />
+						<input type="button" id="adminFormSubmit" class="grouped two" value="送出" />
+					</div>
+				</div>
+			</article>
+
+			<article id="adminRegister" parent="#admin">
+				<h2 class="major">報名列表</h2>
+				<div id="registerList" class="admin table_wrapper" style="overflow:scroll;display:none">
+					<table style="width:150%">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>隊名</th>
+								<th>電子郵件</th>
+								<th>聯絡電話</th>
+								<th>隊長</th>
+								<th>隊員1</th>
+								<th>隊員2</th>
+								<th>隊員3</th>
+								<th>決賽</th>
+							</tr>
+						</thead>
+						<tbody class="secret">
+						</tbody>
+					</table>
+				</div>
+			</article>
+
+			<article id="adminContests" parent="#admin">
+				<h2 class="major">競賽列表</h2>
+				<ul><li><a href="#adminAddCont">新增比賽</a></li></ul>
+				<div id="contestList" class="admin table_wrapper" style="overflow:scroll;display:none">
+					<table style="width:150%">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>名稱</th>
+								<th>開始時間</th>
+								<th>結束時間</th>
+								<th>題目連結</th>
+								<th>題目格數</th>
+							</tr>
+						</thead>
+						<tbody class="secret">
+						</tbody>
+					</table>
+				</div>
+			</article>
+
+			<article id="adminTestResults" parent="#adminContests">
+				<h2 class="major">競賽結果</h2>
+				<div id="contestList" class="admin table_wrapper" style="overflow:scroll;display:none">
+					<table style="width:150%">
+						<thead>
+							<tr class="secret">
+							</tr>
+						</thead>
+						<tbody class="secret">
+						</tbody>
+					</table>
+				</div>
+			</article>
+
+			<article id="adminAddCont" parent="#adminContests">
+				<h2 class="major">新增比賽</h2>
+				<form id="adminContForm">
+					<div class="fields">
+						<div class="field">
+							<label for="contestName">競賽ID(請用英數文字)</label>
+							<input type="text" id="contestName" name="contestName" pattern="^\w+$" />
+						</div>
+						<div class="field">
+							<label for="contestTitle">競賽名稱</label>
+							<input type="text" id="contestTitle" name="contestTitle" />
+						</div>
+						<div class="field">
+							<label for="startTime">開始時間</label>
+							<input type="text" id="startTime" name="startTime" />
+						</div>
+						<div class="field">
+							<label for="endTime">結束時間</label>
+							<input type="text" id="endTime" name="endTime" />
+						</div>
+						<div class="field">
+							<label for="contestFile">題目</label>
+							<input type="file" id="contestFile" name="contestFile" />
+							<label for="contestFile" id="contestLink"></label>
+						</div>
+						<div class="field">
+							<label for="numOfProbs">總格數</label>
+							<input type="text" id="numOfProbs" name="numOfProbs" pattern="^\d+$" />
+						</div>
+					</div>
+					<ul class="actions">
+						<li><input class="major" type="submit" /></li>
+						<li><input type="button" value="刪除" /></li>
+					</ul>
+				</form>
+
+			</article>
+
+		</div>
+
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="https://www.facebook.com/tianwuphysics/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a href="mailto:tianwuphysics@gmail.com" class="icon fa-paper-plane"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+			</ul>
+			<p class="copyright">&copy; Made by Andrew Yang & template from <a href="https://html5up.net">HTML5 UP</a>.</p>
+
+		</footer>
+
+	</div>
+
+	<!-- BG -->
+	<div id="bg"></div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/jquery.simple-dtpicker.js"></script>
+	<script>
+		var formatDate = da => (d => d.toISOString().slice(0, 10) + " " + d.toTimeString().slice(0, 5))(new Date(da));
+		$.fn.serializeJSON = function() {
+			var unindexed_array = this.serializeArray();
+			var indexed_array = {};
+
+			$.map(unindexed_array, function(n, i) {
+				indexed_array[n['name']] = n['value'];
+			});
+
+			return indexed_array;
+		}
+
+		async function sha256(message) {
+			// encode as UTF-8
+			const msgBuffer = new TextEncoder('utf-8').encode(message);
+
+			// hash the message
+			const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+
+			// convert ArrayBuffer to Array
+			const hashArray = Array.from(new Uint8Array(hashBuffer));
+
+			// convert bytes to hex string
+			const hashHex = hashArray.map(b => ('00' + b.toString(16)).slice(-2)).join('');
+			return hashHex;
+		}
+		$("#startTime #endTime").appendDtpicker({
+			locale: "zh",
+			"closeOnSelected": true
+		});
+		// Attach a change event to endTime -
+		// NOTE we are using '#ID' instead of '*[name=]' selectors in this example to ensure we have the correct field
+		$('#endTime').change(function() {
+			$('#startTime').appendDtpicker({
+				maxDate: $('#endTime').val() // when the end time changes, update the maxDate on the start field
+			});
+		});
+
+		$('#startTime').change(function() {
+			$('#endTime').appendDtpicker({
+				minDate: $('#startTime').val() // when the start time changes, update the minDate on the end field
+			});
+		});
+
+		// trigger change event so datapickers get attached
+		$('#endTime').trigger('change');
+		$('#startTime').trigger('change');
+
+		$("input:not([type=file]), select").prop("required", true);
+		$(window).one("load", ()=>{
+			console.log("one")
+			sessionStorage.removeItem('admin')
+			if (location.hash.indexOf("admin") != -1) location.hash = "#admin";
+		});
+		(f => {
+			$(window).on("hashchange", f).on("load", f);
+		})(function() {
+			console.log("jizz");
+			if (location.hash.indexOf("admin") == -1) {
+				$(".admin").css("display", "none")
+				$(".secret").html("");
+				$("#secret").val("");
+				$("#adminForm").css("display", "block");
+			} else {
+				if(location.hash != "#admin" && !sessionStorage.getItem('admin'))
+					location.hash = "";
+			}
+			if (location.hash == "#adminContests") fetchContests();
+			if (location.hash == "#adminRegister") fetchData();
+		})
+		$("#secret").on("keydown", e => {
+			if (e.keyCode == 13) $("#adminFormSubmit").click();
+		});
+		$("#adminFormSubmit").on("click", async function() {
+			event.preventDefault();
+			var admin = await sha256($("#secret").val());
+			$.post("/ajax", {
+				request: "admin login",
+				admin
+			}, res => {
+				if (res.error) alert(res.error);
+				else {
+					sessionStorage.setItem('admin', admin);
+					$(".admin").css("display", "block");
+					$("#adminForm").css("display", "none");
+
+				}
+			});
+		});
+
+		function addCont(name) {
+			if (name) {
+				$.post("ajax", {
+					request: "get contest",
+					admin: sessionStorage.getItem('admin'),
+					name
+				}, res => {
+					$("#contestName").val(res.contest.name).prop("disabled", true);
+					$("#contestLink").text(res.contest.contestLink);
+					$("#contestTitle").val(res.contest.contestTitle);
+					$("#numOfProbs").val(res.contest.numOfProbs);
+					$("#startTime").val(formatDate(res.contest.startTime));
+					$("#endTime").val(formatDate(res.contest.endTime));
+				})
+			} else {
+				$("#adminContForm input").prop("disabled", false);
+			}
+			location.hash = "#adminAddCont";
+		}
+
+		function fetchContests() {
+			if (!sessionStorage.getItem('admin'))
+				location.hash = "";
+			$.post("/ajax", {
+				request: "fetch contests",
+				admin: sessionStorage.getItem('admin')
+			}, res => {
+				if (res.error) {
+					console.log(res)
+					alert(res.error);
+				} else {
+					console.log(JSON.parse(res.result));
+					$("#contestList tbody").html("");
+					JSON.parse(res.result).forEach((contest, i) => {
+						$("#contestList tbody").append(
+							`
+									<tr onclick="fetchTest('${contest.name}')">
+										<td>${contest.name}</td>
+										<td>${contest.contestTitle}</td>
+										<td>${formatDate(contest.startTime)}</td>
+										<td>${formatDate(contest.endTime)}</td>
+										<td><a href=${contest.contestLink}><svg height="1.25em" viewBox="0 0 60 60">
+											<path d="M42.5,22h-25c-0.552,0-1,0.447-1,1s0.448,1,1,1h25c0.552,0,1-0.447,1-1S43.052,22,42.5,22z"/>
+											<path d="M17.5,16h10c0.552,0,1-0.447,1-1s-0.448-1-1-1h-10c-0.552,0-1,0.447-1,1S16.948,16,17.5,16z"/>
+											<path d="M42.5,30h-25c-0.552,0-1,0.447-1,1s0.448,1,1,1h25c0.552,0,1-0.447,1-1S43.052,30,42.5,30z"/>
+											<path d="M42.5,38h-25c-0.552,0-1,0.447-1,1s0.448,1,1,1h25c0.552,0,1-0.447,1-1S43.052,38,42.5,38z"/>
+											<path d="M42.5,46h-25c-0.552,0-1,0.447-1,1s0.448,1,1,1h25c0.552,0,1-0.447,1-1S43.052,46,42.5,46z"/>
+											<path d="M38.914,0H6.5v60h47V14.586L38.914,0z M39.5,3.414L50.086,14H39.5V3.414z M8.5,58V2h29v14h14v42H8.5z"/>
+										</svg></a></td>
+										<td>${contest.numOfProbs}</td>
+</td>
+									</tr>
+									`
+						)
+					});
+				}
+			});
+		}
+
+		function fetchData() {
+			$.post("/ajax", {
+				request: "fetch data",
+				admin: sessionStorage.getItem('admin')
+			}, res => {
+				if (res.error) {
+					console.log(res)
+					alert(res.error);
+				} else {
+					console.log(JSON.parse(res.result));
+					$("#registerList tbody").html("");
+					JSON.parse(res.result).forEach((teamdata, i) => {
+						var team = JSON.parse(teamdata.data);
+						$("#registerList tbody").append(
+							`
+									<tr>
+										<td>${i+1}</td>
+										<td>${team.name}</td>
+										<td>${team.email}</td>
+										<td>${team.tel}</td>
+										<td><span class="tooltip">${team.name1}
+											<span class="tooltiptext">${team.school1}，${team.grade1}，${team.gender1}，${team.food1}</span>
+										</span></t>
+										<td><span class="tooltip">${team.name2}
+											<span class="tooltiptext">${team.school2}，${team.grade2}，${team.gender2}，${team.food2}</span>
+										</span></td>
+										<td><span class="tooltip">${team.name3}
+											<span class="tooltiptext">${team.school3}，${team.grade3}，${team.gender3}，${team.food3}</span>
+										</span></td>
+										<td><span class="tooltip">${team.name4}
+											<span class="tooltiptext">${team.school4}，${team.grade4}，${team.gender4}，${team.food4}</span>
+										</span></td>
+										<td>${team.finals=="on"?"是":"否"}</td>
+									</tr>
+									`
+						)
+					});
+				}
+			});
+		}
+		function fetchTest(contestId){
+			$.post("/ajax", {
+				request: "fetch result",
+				admin: sessionStorage.getItem('admin'),
+				contestId
+			}, res =>{
+				if(res.error){
+					console.log(res);
+					alert(res.error);
+					return;
+				}
+				var data = JSON.parse(res.result);
+				$("#resultList thead tr").html("");
+				$("#resultList tbody").html("");
+				if(data.length == 0)return;
+				for(i in data[0])
+					$("#resultList thead tr").append(`<th>${i}</th>`);
+				for(i of data){
+					var str = ""
+					for(j in i)
+						if(isNaN(j-0))str += `<td>${j}</td>`;
+						else{
+							j = JSON.parse(j);
+							str += `<td>${decodeURIComponent(j.answer)}</td>`;
+						}
+					$("#resultList tbody").append(`<tr>${i}</tr>`)
+				}
+				location.hash = "#adminTestResults";
+			})
+		}
+		$("#num").on("input",function(){
+			var val = $(this).val();
+			for(var i = 1; i <= 4; i++){
+				$(`#contestant${i}`).css("display",i>val?"none":"block").find("input, select").prop("required",i<=val);
+			}
+			$("#warning").css("display",val == 4?"none":"block");
+		})
+		$("#registerForm").on("submit", async function(event) {
+			console.log(event);
+			event.preventDefault();
+			var data = $(this).serializeJSON();
+			if (data.psw != data.confPsw) alert("確認密碼與密碼不符");
+			delete data.psw;
+			delete data.confPsw;
+			console.log(data);
+			$.post("/ajax", {
+				request: "register",
+				auth: btoa(`${$("#email").val()}:${await sha256($("#psw").val())}:tianwuphysics`),
+				data: JSON.stringify(data)
+			}, res => {
+				if (res.error) alert(res.error);
+				else {
+					$("#success .major").text("報名成功！");
+					$("#teamName").text($("#name").val());
+					location.hash = "#success";
+				}
+			});
+		});
+		$("#registerAloneForm").on("submit", async function(event) {
+			console.log(event);
+			event.preventDefault();
+			var data = $(this).serializeJSON();
+			console.log(data);
+			$.post("/ajax", {
+				request: "register alone",
+				data: JSON.stringify(data)
+			}, res => {
+				if (res.error) alert(res.error);
+				else {
+					$("#success .major").text("報名成功！");
+					$("#teamName").text($("#aloneName").val());
+					location.hash = "#success";
+				}
+			});
+		});
+		$("#cancelForm").on("submit", async function(event) {
+			event.preventDefault();
+			if (!confirm("您確定要取消報名嗎")) return;
+			$.post("/ajax", {
+				request: "cancel",
+				auth: btoa(`${$("#cancelEmail").val()}:${await sha256($("#cancelPsw").val())}:tianwuphysics`),
+				email: $("#cancelEmail").val()
+			}, res => {
+				if (res.error) alert(res.error);
+				else {
+					$("#success .major").text("取消成功");
+					$("#teamName").text("QAQ");
+					location.hash = "#success";
+				}
+			});
+		});
+		$("#loginForm").on("submit", async function(event) {
+			event.preventDefault();
+			var auth = btoa(`${$("#loginEmail").val()}:${await sha256($("#loginPassword").val())}:tianwuphysics`);
+			$.post("ajax", {
+				request: "login",
+				auth,
+				email: $("#loginEmail").val()
+			}, res => {
+				if (res.error) alert(res.error)
+				else {
+					sessionStorage.setItem("auth", auth);
+					sessionStorage.setItem("name", $("#loginName").val());
+					open("/contest?2019first", "_self");
+				}
+			})
+		});
+		$("#adminContForm").on("submit", async function(event) {
+			event.preventDefault();
+			$.post("ajax", {
+				request: "add contest",
+				admin: sessionStorage.getItem('admin'),
+				contestLink: $("#contestLink").text(),
+				contestName: $("#contestName").val(),
+				...$(this).serializeJSON()
+			}, res => {
+				if (res.error) alert(res.error);
+				else {
+					console.log("新增成功");
+					open("#adminContests", "_self");
+				}
+			})
+
+		});
+		$("#contestFile").on("change", e => {
+			var form = new FormData();
+			form.append("admin", sessionStorage.getItem('admin'));
+			form.append("file", $("#contestFile")[0].files[0]);
+			$.ajax({
+				type: "POST",
+				url: "/form",
+				data: form,
+				cache: false,
+				processData: false,
+				contentType: false,
+				success: res => {
+					if (res.error) {
+						alert(res.error);
+					} else {
+						$("#contestLink").text(res.contestLink);
+					}
+				}
+			})
+		});
+	</script>
+</body>
+
+</html>
