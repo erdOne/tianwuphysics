@@ -48,7 +48,7 @@ const paths = {
 
 function getFtpConnection() {
     return ftp.create({
-        ...config.ftp
+        ...config.ftp,
         log: gutil.log
     });
 }

@@ -1,0 +1,52 @@
+{
+  "name": "tianwuphysics",
+  "version": "1.0.0",
+  "description": "依照`config.sample.js`撰寫`config.js`   執行`init.sql`   `npm install`   `npm start`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erdOne/tianwuphysics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erdOne/tianwuphysics/issues"
+  },
+  "homepage": "https://github.com/erdOne/tianwuphysics#readme",
+  "dependencies": {
+    "formidable": "^1.2.2",
+    "gulp": "^4.0.2",
+    "js-cookie": "^2.2.1",
+    "mime": "^2.4.6",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.4.8",
+    "websocket": "^1.0.31"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "babel-loader": "^8.1.0",
+    "del": "^5.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-debug": "^4.0.0",
+    "gulp-each": "^0.5.0",
+    "gulp-exec": "^4.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-ssh": "^0.7.0",
+    "gulp-uglify": "^3.0.2",
+    "gutil": "^1.6.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "vinyl-ftp": "^0.6.1",
+    "webpack": "^4.43.0",
+    "webpack-stream": "^5.2.1"
+  }
+}

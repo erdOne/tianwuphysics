@@ -10,7 +10,10 @@ var pool = mysql.createPool({
 async function query(sql) {
     return new Promise((resolve, reject) => {
         pool.getConnection(function(err, conn) {
-            if (err) reject(err);
+            if (err) {
+                reject(err);
+                return;
+            }
             console.log("MySQL queried with sql: " + sql);
             return conn.query(sql, function(err, result) {
                 conn.release();

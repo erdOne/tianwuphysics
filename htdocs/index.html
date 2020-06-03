@@ -629,7 +629,7 @@
 				}, res => {
 					$("#contestName").val(res.contest.name).prop("disabled", true);
 					$("#contestLink").text(res.contest.contestLink);
-					$("#contestTitle").val(res.contest.contestTitle);
+					$("#contestTitle").val(res.contest.title);
 					$("#numOfProbs").val(res.contest.numOfProbs);
 					$("#startTime").val(formatDate(res.contest.startTime));
 					$("#endTime").val(formatDate(res.contest.endTime));
@@ -656,9 +656,9 @@
 					JSON.parse(res.result).forEach((contest, i) => {
 						$("#contestList tbody").append(
 							`
-									<tr onclick="fetchTest('${contest.name}')">
+									<tr onclick="addCont('${contest.name}')">
 										<td>${contest.name}</td>
-										<td>${contest.contestTitle}</td>
+										<td>${contest.title}</td>
 										<td>${formatDate(contest.startTime)}</td>
 										<td>${formatDate(contest.endTime)}</td>
 										<td><a href=${contest.contestLink}><svg height="1.25em" viewBox="0 0 60 60">

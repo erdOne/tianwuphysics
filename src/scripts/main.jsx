@@ -6,7 +6,6 @@ import LeftPanel from "./LeftPanel.jsx"
 import RightPanel from "./RightPanel.jsx"
 
 
-
 class Main extends React.Component {
     constructor(props) {
         super(props);
@@ -38,7 +37,7 @@ class Main extends React.Component {
         var status = this.state.status;
         var header = time => (
             <Header
-                started = {status=="fetched"}
+                started = {new Date() > new Date(this.state.contest.startTime)}
                 ended = {status=="ended"}
                 time = {time}
                 user = {status != "not logged in" && this.state.user.name}

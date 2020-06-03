@@ -23,7 +23,7 @@ class RightPanel extends React.Component {
     connect() {
         if (this.state.connected) return;
         try {
-            this.ws = new WebSocket(`wss://${location.hostname}?` + URLstringify({
+            this.ws = new WebSocket(`ws://${location.hostname}?` + URLstringify({
                 auth: sessionStorage.getItem("auth"),
                 name: sessionStorage.getItem("name"),
                 contest: this.props.contest.name

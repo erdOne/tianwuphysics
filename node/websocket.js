@@ -33,6 +33,7 @@ function onClose (reason, description) {
 }
 
 async function onRequest (request) {
+    console.log("Requested");
     var auth = sha256(request.resourceURL.query.auth+"paulwudaodao");
     var result = await db.query(`SELECT * FROM users WHERE auth='${auth}';`);
     if(!result || !result[0])return request.reject();

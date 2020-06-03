@@ -70,7 +70,7 @@ async function postProcessor(data, cookie, send){
                 var result = await db.query(`SELECT * FROM users WHERE no > 0`);
                 msg.result = JSON.stringify(result);
                 break;
-            case "fetch data":
+            case "fetch result":
                 if(sha256(data.admin) != admin_auth)throw "你不該來的喔肥弟";
                 var result = await db.query(`SELECT * FROM ${data.contestId}`);
                 msg.result = JSON.stringify(result);
@@ -125,7 +125,7 @@ async function postProcessor(data, cookie, send){
                         endTime='${toMysqlDateTime(data.endTime)}',
                         numOfProbs=${data.numOfProbs},
                         contestLink='${data.contestLink}',
-                        contestTitle='${data.contestTitle}'
+                        title='${data.contestTitle}'
                         WHERE name = '${data.contestName}'`);
                     if(result[0].numOfProbs < data.numOfProbs){
                         db.query(`ALTER TABLE \`${data.contestName}\` ${

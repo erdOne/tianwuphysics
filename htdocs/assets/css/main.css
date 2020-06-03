@@ -267,7 +267,8 @@ sup {
 .header {
     background-color: #171E4D;
     height: 75px;
-    position: relative;
+    width: 100%;
+    position: fixed;
 }
 
 .note {
