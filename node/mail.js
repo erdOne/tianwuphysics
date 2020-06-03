@@ -1,15 +1,12 @@
 // ./node/mail.js
 var nodemailer = require('nodemailer');
-
+var config = require("../config.js");
 var transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
       port: 587,
       secure: false,
       requireTLS: false,
-  auth: {
-    user: 'tianwuphysics@gmail.com',
-    pass: 'tianwuno1!'
-  }
+  auth: config.mail
 });
 
 function sendMail(to, subject, text){
